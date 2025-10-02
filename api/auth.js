@@ -71,9 +71,4 @@ router.put("/me", authMiddleware, async (req, res) => {
   });
 });
 
-//Logout
-router.post("/logout", (req, res) => {
-  res.json({ msg: "Déconnecté" });
-});
-
 module.exports = router;
